@@ -1,0 +1,41 @@
+# This file contains metadata for your plugin. Since 
+# version 2.0 of QGIS this is the proper way to supply 
+# information about a plugin. The old method of 
+# embedding metadata in __init__.py will 
+# is no longer supported since version 2.0.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=Grid Zone Generator
+qgisMinimumVersion=2.6
+description=This plugin creates UTM grid zones for a specific scale
+version=1.2
+author=Brazilian Army - Geographic Service Bureau
+email=suporte.dsgtools@dsg.eb.mil.br
+about = Plugin created by the Brazilian Army to generate UTM Grid zones
+
+# End of mandatory metadata
+
+# Recommended items:
+
+# Uncomment the following line and add your changelog:
+changelog=
+    1.0.1 - Translation in Brazilian Portuguese added.
+    1.1 - Now the plugin works on a separate thread to not block QGIS.
+    1.2 - Returning with memory layer usage option
+
+# Tags are comma separated with spaces allowed
+tags=grid,zone,utm,generator,brazilian,army,Exército,Brasileiro,DSG,Diretoria,Serviço,Geográfico
+
+homepage=https://github.com/danieljefferson/GridZoneGenerator
+tracker=https://github.com/danieljefferson/GridZoneGenerator
+repository=https://github.com/danieljefferson/GridZoneGenerator
+category=Plugins
+icon=grid.png
+# experimental flag
+experimental=False
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+

@@ -1,0 +1,41 @@
+# -*- coding: UTF-8 -*-
+# __author__ = 'Administrator'
+import define
+from PyQt4.QtCore import QString
+class Confirmations:
+    APPLY_LIMITING_RADIAL = "A limiting radial must be applied in order to calculate the holding using the entered parameters.\nWould you like to apply the limiting radial?"
+    ATTACH_OLD_QA = "The filename of the active drawing was changed.\nWould you like to attach the contents of the previous QA file and continue with a different file name?"
+    AUTO_POSITION_WORLD_FILE = "A world file '{0}' is associated with the selected image.\nWould you like to use the file and automatically geo-position the selected raster image?"
+    CLEAR_AREAS = "Area you sure you want to clear all areas?"
+    CLEAR_RNP_AR_LEGS = "Modifying the LTP/FTP position results in the deletion of all previously created RNP AR legs.\nAre you sure you want to continue and delete the existing RNP AR legs within this group?"
+    CLEAR_SEGMENTS = "Are you sure you want to clear the current set of segments?"
+    CONTINUE_CONSTRUCTING_FMS_120 = QString("FMS systems cannot accept course changes greater than 120") + unicode("°", "utf-8") + QString(". Use a RF leg instead.\n Do you wish to continue with the construction?")
+    COPY_SELECTED_RECORD = "Would you like to make a copy of '%s' ?"
+    CREATE_NEW_QA = "'%s' has not been QAed yet.\nWould you like to create a new QA file for this drawing?"
+    DELETE_ALL_ENTRIES_FROM_LIST = "Are you sure you want to delete all entries from the list?"
+    DELETE_CRITERIA = "Are you sure you want to delete the '{0}' criteria?"
+    DELETE_DATA_GROUP = "Are you sure you want to delete the '%s' data group?"
+    DELETE_ENTRY_FROM_PROJECT = "Are you sure you want to delete the selected entry(s) from the project?"
+    DELETE_FATO = "Are you sure you want to delete the '%s' FATO?"
+    DELETE_IMAGE_FROM_PROJECT = "Are you sure you want to delete the selected image(s) from the project?"
+    DELETE_MSA_SECTOR = "Are you sure you want to delete the selected sector?"
+    DELETE_NAV_AID = "Are you sure you want to delete the '%s' navigational aid?"
+    DELETE_RUNWAY = "Are you sure you want to delete the '{0}' runway?"
+    DELETE_SEGMENT = "Are you sure you want to remove the '%s' segment?"
+    DELETE_SELECTED_ENTRY = "Are you sure you want to delete the selected entry?"
+    DELETE_SELECTED_ITEM = "Area you sure you want to delete the selected item?"
+    DELETE_TEMPLATE = "Are you sure you want to delete the '%s' template?"
+    INSUFFICIENT_DISTANCE_FROM_WPT_TO_OUTBOUND_LEG = "Insufficient distance from the waypoint to the end of the outbound leg.\nWould you like to increase the distance to %f nm?"
+    INSUFFICIENT_LENGTH_OF_OUTBOUND_LEG = "Insufficient length of the outbound leg.\nWould you like to increase the length of the outbound leg to %f nm?"
+    MODEL_3D_AIRSPACE = "The '%s' airspace contains %s vertices thus the 3D modeling can take a very long processing time.\nDo you still wish model the airspace in 3D?"
+    OPEN_CREATED_FILES = "The following files have been successfully created:\n%s\n%s\nWould you like to open the created files?"
+    OVERWRITE_IMAGE_IN_PROJECT = "The selected image '%s' of scale '%s' already exists in the project file.\nDo you wish to overwrite it?"
+    OVERWRITE_LICENSE_FILE = "Would you like to overwrite the old license file?"
+    PINS_APP_PROHIBIT_LEFT_OR_RIGHT = "Prohibiting the fly-over of an heliport or landing location will reduce the manoeuvre area. Would you like to prohibit a left fly-over?\nYes - Left fly-over\nNo - Right fly-over"
+    QA_FILE_FORMAT_VERSION = "The file format (%s) of the QA file being loaded is different from the default QA file format (%s).\nWould you like to keep the QA file in the original file format?"
+    REMOVE_PROJECT_FROM_HISTORY = "'%s' is no longer accessible.\nWould you like to remove it from the projects history?"
+    REMOVE_SELECTED_AREA = "Are you sure you want to remove the selected area?"
+    REMOVE_SELECTED_ENTRIES = "Are you sure you want to delete the selected entry(s)?"
+    RWY_POSITIONS_TRACK_CHANGE_INCORRECT = "The track change between some runway positions seems to be incorrect. It is recommended to double check all entered positions.\nDo you still wish to save the runway and close this dialogue box?"
+    SELECTED_POLYLINE_ALREADY_IN_3D = "The selected polyline is already in 3D with an altitude of {0} ({1}).\nDo you still wish to change its altitude to {2}?"
+    TURN_LEFT_OR_RIGHT = QString("A course change of 180") + define._degreeStr + QString(" can be achieved by constructing either a left or right turn. Would you like to turn left?\nYes - Left turn\nNo - Right turn")

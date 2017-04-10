@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QaWindow</class>
+ <widget class="QMainWindow" name="QaWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>456</width>
+    <height>447</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>QaWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="margin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QTabWidget" name="tabControl">
+         <property name="maximumSize">
+          <size>
+           <width>200</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tabQA">
+          <property name="toolTip">
+           <string>QA</string>
+          </property>
+          <property name="whatsThis">
+           <string/>
+          </property>
+          <attribute name="title">
+           <string>QA</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="vlTabQA">
+           <property name="bottomMargin">
+            <number>6</number>
+           </property>
+           <item>
+            <widget class="QTreeView" name="treeView"/>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tabReport">
+          <property name="toolTip">
+           <string>Report</string>
+          </property>
+          <attribute name="title">
+           <string>Report</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="hlTabReport">
+           <property name="bottomMargin">
+            <number>6</number>
+           </property>
+           <item>
+            <widget class="QTreeView" name="treeViewReport"/>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="pnlEntry">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="vlPnlEntry">
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="lblDateTime">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="pnlSnapshot">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="hlPnlSnapshot">
+             <property name="margin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QGraphicsView" name="picSnapshot"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPlainTextEdit" name="richBox"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_2">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="margin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_3">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>9</number>
+          </property>
+          <property name="leftMargin">
+           <number>9</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>9</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="lblHeading">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Title:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="txtHeading"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_4">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <property name="spacing">
+           <number>9</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLineEdit" name="txtComment"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnSubmit">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Submit</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuStrip">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>456</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="mniFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="mniFileExportQA"/>
+    <addaction name="mniFileExportReport"/>
+    <addaction name="separator"/>
+    <addaction name="mniFileClose"/>
+   </widget>
+   <widget class="QMenu" name="mniEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="mniEditCopy"/>
+    <addaction name="mniEditDelete"/>
+    <addaction name="separator"/>
+    <addaction name="mniEditExportWord"/>
+    <addaction name="mniEditComment"/>
+    <addaction name="mniEditExportSST"/>
+   </widget>
+   <addaction name="mniFile"/>
+   <addaction name="mniEdit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusStrip"/>
+  <widget class="QToolBar" name="toolStrip">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>23</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>true</bool>
+   </attribute>
+  </widget>
+  <action name="mniFileExportQA">
+   <property name="text">
+    <string>Export as QA Document</string>
+   </property>
+  </action>
+  <action name="mniFileExportReport">
+   <property name="text">
+    <string>Export as Report Document </string>
+   </property>
+  </action>
+  <action name="mniFileClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="mniEditCopy">
+   <property name="text">
+    <string>Copy</string>
+   </property>
+  </action>
+  <action name="mniEditDelete">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="mniEditExportWord">
+   <property name="text">
+    <string>Export to MS Word</string>
+   </property>
+  </action>
+  <action name="mniEditComment">
+   <property name="text">
+    <string>Edit Comment...</string>
+   </property>
+  </action>
+  <action name="mniEditExportSST">
+   <property name="text">
+    <string>Export to File...</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
